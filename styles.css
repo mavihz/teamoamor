@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #ffe6f0, #ffb6c1);
+    color: #4a0033;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff0f6;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+    max-width: 90%;
+    width: 600px;
+    margin: 20px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    color: #ff4081;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Galeria de fotos */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.galeria img {
+    width: 45%;
+    max-width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+#declaracao {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-top: 15px;
+    color: #660033;
+    text-align: justify;
+}
+
+.contador {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #880e4f;
+}
+
+button {
+    background-color: #ff80ab;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4081;
+    transform: scale(1.05);
+}
+
+/* Responsividade para celular */
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    #declaracao {
+        font-size: 1em;
+    }
+
+    .galeria img {
+        width: 80%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
